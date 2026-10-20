@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"> <!-- 关键1：让布局避开系统状态栏和标题栏 -->
+
+    <!-- 加一个内边距（或者外边距），强行让列表往下走 -->
+    <ListView
+        android:id="@+id/list_view_action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="24dp" /> <!-- 关键2：给列表内部加上距离，彻底把One露出来 -->
+
+</LinearLayout>
